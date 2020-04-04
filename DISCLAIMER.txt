@@ -1,0 +1,10 @@
+Note:
+For testing purposes the program is used for wikipedia pages collected about plants.
+These pages have been collected by wget through a Ruby script and a big latin list of names as a yaml file.
+IF the method passes through tests the example files and the regex script will be uploaded here, however DO keep in mind that all of the extracted texts will be collected with the corresponding licenses grabbed from the related meta tag.
+Please be aware of this and follow the link to the legal page, not the simplified one for accurate usage limitations.
+This program is only for demonstration.
+This is an intentional alternative for Rubular if you need multiline file scans.
+Thank you for your attention.
+That is all.
+
