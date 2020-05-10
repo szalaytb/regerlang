@@ -54,7 +54,7 @@ start() ->
 			   {_,_} = {Evt, Obj},
 			   {_, T} = file:read_file(wxFilePickerCtrl:getPath(Path)),
 			   Result = re:run(T, wxTextCtrl:getValue(EventText),[global,{capture,all,list}]),
-			   wxTextCtrl:writeText(EventText2, Result)
+			   wxTextCtrl:writeText(EventText2, lists:flatten(io_lib:format("~p",[Result])))
 			   end
 	     }]),
 
@@ -67,6 +67,7 @@ start() ->
 			   %%wxTextCtrl:writeText(EventText2, T2)
 			   end
 	     }]),	     
+
      wxButton:connect(Button_file, command_button_clicked, [{callback,
 	     fun(Evt, Obj) ->
 			   {_,_} = {Evt, Obj},
