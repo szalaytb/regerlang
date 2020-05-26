@@ -30,7 +30,7 @@ start() ->
      wxFrame:setMenuBar(F,MenuBar),
      wxFrame:createStatusBar(F),
      wxFrame:connect(F, command_menu_selected),
-     io:fwrite("\n\nQuicly quit with command + Q on MacOS or alt + F4 on Windows and kill erlang with the corresponding command from linux terminal, for now...\n"),
+     io:fwrite("\n\nQuickly quit with command + Q on MacOS or alt + F4 on Windows and kill erlang with the corresponding command from linux terminal, for now...\n"),
      Button_regex = wxButton:new(F, ?wxID_ANY, [{label, "Regex to file"}, {pos,{0, 214}}, {size, {150, 50}}]),
      Button_file = wxButton:new(F, ?wxID_ANY, [{label, "ScanTheFile"}, {pos,{0, 314}}, {size, {150, 50}}]),
      Button_preview = wxButton:new(F, ?wxID_ANY, [{label, "Preview result"}, {pos, {0, 414}}, {size, {150,50}}]),
